@@ -1,26 +1,77 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
 
-# ignore .vscode folder
-.vscode
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# ==============================
+# Django
+# ==============================
+*.log
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
 
-# testing
-/coverage
+# ==============================
+# Environment / Secrets
+# ==============================
+.env
+.env.*
+!.env.example
 
-# production
-/build
+# ==============================
+# Docker
+# ==============================
+mysql-data/
+*.pid
 
-# misc
+# ==============================
+# IDE / Editors
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==============================
+# OS files
+# ==============================
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+Thumbs.db
 
+# ==============================
+# Node.js
+# ==============================
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# ==============================
+# Testing / Coverage
+# ==============================
+.coverage
+htmlcov/
+.pytest_cache/
+.coverage.*
+
+# ==============================
+# Build / Distribution
+# ==============================
+build/
+dist/
+*.egg-info/
+
+# ==============================
+# Git
+# ==============================
+.git/
